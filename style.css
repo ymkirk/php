@@ -1,0 +1,90 @@
+html{
+	margin: 1em;
+	margin-top: .5em;
+	box-sizing:content-box;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color: #319194;
+}
+
+body {
+	background-color: #f8e2b6;
+}
+h1	{
+	margin: 1em;
+	text-align: center;
+	font-family: sans-serif, Trebushet MS;
+}
+h2,h3,h4 {
+	margin: .5em;
+	text-align: center;
+	font-family: sans-serif, Trebushet MS;
+}
+p	{
+	margin: 1em;
+	font-family: sans-serif, Trebushet MS;
+}
+footer	{
+	margin: 1rem;
+	font-size: 12px;
+	text-align: center;
+}
+
+.pCenter	{
+	text-align: center;
+}
+
+.welcome	{
+	float:left;
+	color: lightblue;
+	font-size: large;
+}
+
+.quote	{
+	text-align: center;
+	font-size: 18px;
+	font-family: 'Leckerli One', cursive;
+}
+.error	{
+		color: red;
+}
+.valid {
+	color: green;
+}
+.valid:before {
+	position: relative;
+	left: -35px;
+	content: url('check.png');
+}
+
+/* Add a red text color and an "x" icon when the requirements are wrong */
+.invalid {
+	color: red;
+}
+.invalid:before {
+	position: relative;
+	left: -35px;
+	content: url('red.png');
+}
+.profilePic {
+	width: 100%;
+	max-width: 30vw;
+}
+figure {
+	float: left;
+	padding-right: 2em;
+}
+
+
+  /*tablet*/
+@media only screen and ( max-width: 700px )	{
+	img { max-width: 75%;float:none; }
+	nav { width: 100%; float: none; }
+	body { background-image: none; }
+}
+/*phone*/
+@media only screen and ( max-width: 400px )	{
+	img { max-width: 45%;float: none; }
+	nav { width: 100%; float: none; }
+	body { background-image: none; }
+}
